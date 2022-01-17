@@ -18,8 +18,8 @@
       <nav class="menu"><!--ne pas oublier la bordure bleue qui s’affiche au survol. La bordure bleue s’affiche au-dessus en version desktop et
         en dessous en version mobile-->
         <ul> <!--cela doit s'afficher horizontalement dans toutes les versions-->
-          <li><a href="#Hébergements">Hébergements</a></li>
-          <li><a href="#Activités">Activités</a></li>
+          <li><a href="#Hébergements">Hébergements</a><span></span></li><!--span à inserer?-->
+          <li><a href="#Activités">Activités</a><span></span></li>
         </ul>
       </nav>
     </header>
@@ -27,26 +27,26 @@
       <section id="section_one">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
-        <form action="#" method="get"> 
+        <form action="#" method="post"> 
           <i class="fas fa-map-marker-alt"></i>
           <input placeholder="Marseille, France" id="search" type="search" name="search">
           <button type="submit">Rechercher</button>
         </form> 
         <section id="filters">
           <h2>Filtres</h2>
-          <form action="#" method="get">
+          <form action="#" method="post">
             <i class="fas fa-money-bill-wave"></i>
             <button type="button">Economique</button>
           </form>
-          <form action="#" method="get">
+          <form action="#" method="post">
             <i class="fas fa-child"></i>
             <button type="button">Familial</button>
           </form>
-          <form action="#" method="get">
+          <form action="#" method="post">
             <i class="fas fa-heart"></i>
             <button type="button">Romantique</button>
           </form>
-          <form action="#" method="get">
+          <form action="#" method="post">
             <i class="fas fa-dog"></i>
             <button type="button">Animaux autorisés</button>
           </form>
@@ -61,6 +61,9 @@
               <img src="C:\Users\isa\Documents\Marie\PremierProjet\images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo auberge la cannebière">
               <h3>Auberge La Cannebière</h3>
               <p>Nuit à partir de <strong>25€</strong></p>
+              <span>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              </span><!--les petites étoiles de notation-->
             </article>
             <article></article>
             <article></article>
@@ -81,6 +84,22 @@
       </section>
     </main> 
     <footer>
+      <article>
+        <h4>A propos</h4>
+        <p>Fonctionnement du site</p>
+        <p>Conditions générales de vente</p>
+        <p>Données et confidentialité</p>
+      </article>
+      <article>
+        <h4>Nos hébergements</h4>
+        <p>Charte qualité</p>
+        <p>Soumettre votre hôtel</p>
+      </article>
+      <article>
+        <h4>Assistance</h4>
+        <p>Centre d'aide</p>
+        <p>Nous contacter</p>
+      </article>
     </footer>
   </body>
 </html>

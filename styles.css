@@ -1,1 +1,12 @@
-body {font-family: 'Raleway', sans-serif;}
+body {font-family: 'Raleway', verdana, sans-serif;}
+p {font-size: 0.75em;}
+h1 {font-size:large;}
+h2 {font-size: medium;}
+h3 {font-size: small; }
+h4 {font-size:smaller;}
+#menu {display: flex; justify-content: flex-end;}
+ul {list-style-type: none;}
+a:link { text-decoration: none;}
+a:visited { text-decoration: none;}
+a:hover
+a:active { text-decoration: none;}

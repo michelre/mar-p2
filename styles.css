@@ -1,8 +1,18 @@
+/*Body*/
 body {
     font-family: 'Raleway', verdana, sans-serif;
     margin: 0;
     }
-/*header*/
+/*Texts*/    
+p {font-size: 0.75em;}
+h1 {font-size:large;}
+h2 {font-size: medium;}
+h3 {font-size: small; }
+h4 {font-size:smaller;}
+a:link { text-decoration: none;}
+a:visited { text-decoration: none;}
+a:active { text-decoration: none;}
+/*Header*/
 nav { 
     display: flex;
     justify-content: space-between;
@@ -20,13 +30,20 @@ nav li {
     margin: 10px 20px 0 20px;
     font-size: 0.75em;
 }
+/*Main*/
+/*Section Recherche*/
+/*Form*/
+/*Filters*/
+#filters{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+/*Footer*/
+footer {
+    background-color: #F2F2F2;
+    width: 100%;
+    display:flex;
+    justify-content: left;
+}
 
-footer {background-color: #F2F2F2;}
-p {font-size: 0.75em;}
-h1 {font-size:large;}
-h2 {font-size: medium;}
-h3 {font-size: small; }
-h4 {font-size:smaller;}
-a:link { text-decoration: none;}
-a:visited { text-decoration: none;}
-a:active { text-decoration: none;}

@@ -29,7 +29,17 @@ nav ul {
 nav li {
     margin: 10px 20px 0 20px;
     font-size: 12px;
+    border-top: transparent solid 2px;
+    padding: 30px 15px 30px 15px;
+     }
+nav a:visited {
+    color: black;
 }
+nav a:hover {
+    color: #0065FC;
+    border-top: #0065FC solid 2px;
+    padding: 30px 15px 30px 15px;
+    }
 /*Main*/
 /*Section Recherche*/
 /*Form*/

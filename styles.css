@@ -20,11 +20,12 @@ nav {
     }
 nav img {
     height: 40px;
-    margin: 10px 20px 0 20px;
+    margin: 0 20px 0 20px;
     }
 nav ul {
     display: flex;
     list-style-type: none;
+    margin: 0;
     }
 nav li {
     margin: 10px 20px 0 20px;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr"> 
+<html lang="en"> 
   <head>
     <link href="C:\Users\isa\Documents\Marie\PremierProjet\styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -15,19 +15,19 @@
       <nav id="menu">
         <img src=C:\Users\isa\Documents\Marie\PremierProjet\images\logo\Booki.png alt=Logo/><!--logo est centre sur la version mobile-->
         <ul> 
-          <li><a href="#Hébergements"><span>Hébergements</span></a></li><!--span pour bordure bleue qui s'affiche au survol, en haut version desktop, en bas version mobile -->
-          <li><a href="#Activités"><span>Activités</span></a></li>
+          <li><a href="#Hébergements">Hébergements</a></li><!--span?? pour bordure bleue qui s'affiche au survol, en haut version desktop, en bas version mobile -->
+          <li><a href="#Activités">Activités</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="Recherche">
+      <section id="search">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
-        <form action="#" method="post"> 
+        <form id="form" action="#" method="post"> 
           <i class="fas fa-map-marker-alt"></i>
           <input placeholder="Marseille, France" id="search" type="search" name="search">
-          <button type="submit">Rechercher</button>
+          <button type="submit"><h2>Rechercher</h2></button>
         </form> 
         <section id="filters">
           <h2>Filtres</h2>
@@ -51,7 +51,7 @@
         <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
       </section>
       <section id="Hébergements">
-        <section id="Hébergements_1"><!--la section hébergement à marseille devra avoir un fond gris en desktop mais un fond banc en mobile-->
+        <section id="accomodations"><!--la section hébergement à marseille devra avoir un fond gris en desktop mais un fond banc en mobile-->
           <h1>Hébergements à Marseille</h1>
           <div>
             <a href="#">
@@ -119,7 +119,7 @@
           </div>
           <a href="#"><h2>Afficher plus</h2></a>
         </section>
-        <section id="Populaires"><!--cet article "les plus populaires" doit s'afficher avant "hébergements à marseille ds la version mobile"-->
+        <section id="popular"><!--cet article "les plus populaires" doit s'afficher avant "hébergements à marseille ds la version mobile"-->
           <div>
             <h1>Les plus populaires</h1>
             <i class="fas fa-chart-line"></i>

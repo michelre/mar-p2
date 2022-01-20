@@ -10,7 +10,7 @@ h2 {font-size: 14px;}
 h3 {font-size: 13.5px; }
 h4 {font-size:13px;}
 a:link { text-decoration: none;}
-a:visited { text-decoration: none;}
+a:visited { text-decoration: none; color:black}
 a:active { text-decoration: none;}
 /*Header*/
 nav { 
@@ -28,7 +28,7 @@ nav ul {
     margin: 0;
     }
 nav li {
-    margin: 10px 20px 0 20px;
+    margin: 0 20px 0 20px;
     font-size: 12px;
     border-top: transparent solid 2px;
     padding: 30px 15px 30px 15px;
@@ -40,6 +40,7 @@ nav a:hover {
     color: #0065FC;
     border-top: #0065FC solid 2px;
     padding: 30px 15px 30px 15px;
+    margin: 0 20px 0 20px;
     }
 /*Main*/
 /*Section Recherche*/

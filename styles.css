@@ -43,7 +43,7 @@ nav a:hover {
     margin: 0 20px 0 20px;
     }
 /*Main*/
-/*Section Recherche*/
+/*Section Search*/
 /*Form*/
 /*Filters*/
 #filters{
@@ -51,11 +51,36 @@ nav a:hover {
     justify-content: left;
     align-items: center;
 }
+/*Accommodations*/
+#Hébergements {
+    display: flex;
+    justify-content: left;
+}
+#accommodations {
+    background-color: #F2F2F2;
+    width: 70%;
+}
+.accommodations-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.fotos-1 {
+    width:200px;
+    height:100px;
+}
+/*Popular*/
+#popular {
+    background-color: #F2F2F2;
+    width: 30%;
+}
+/*Activities*/
 /*Footer*/
 footer {
     background-color: #F2F2F2;
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: left;
 }
 

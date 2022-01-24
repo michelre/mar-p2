@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
   <head>
-    <link href="C:\Users\isa\Documents\Marie\PremierProjet\styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Booki</title>
     <meta charset="UTF-8">
@@ -13,50 +13,58 @@
   <body>
     <header>
       <nav id="menu">
-        <img src=C:\Users\isa\Documents\Marie\PremierProjet\images\logo\Booki.png alt=Logo/><!--logo est centre sur la version mobile-->
-        <ul> 
-          <li><a href="#Hébergements">Hébergements</a></li><!--span?? pour bordure bleue qui s'affiche au survol, en haut version desktop, en bas version mobile -->
-          <li><a href="#Activités">Activités</a></li>
+        <img srcset="images/logo/Booki@3x.png" src="./images/logo/Booki.png" alt="Logo Booki" width="500"/><!--logo est centre sur la version mobile-->
+        <ul>
+          <li>
+            <a href="#hebergements">Hébergements</a>
+          </li><!--span?? pour bordure bleue qui s'affiche au survol, en haut version desktop, en bas version mobile -->
+          <li>
+            <a href="#activities">Activités</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="search">
+      <section>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
-        <form id="form" action="#" method="post"> 
+        <form id="form" action="#" method="get">
           <i class="fas fa-map-marker-alt"></i>
           <input placeholder="Marseille, France" id="search" type="search" name="search">
           <button type="submit">Rechercher</button>
-        </form> 
-        <section id="filters">
-          <h2>Filtres</h2>
-          <form action="#" method="post">
-            <i class="fas fa-money-bill-wave"></i>
-            <button type="button">Economique</button>
-          </form>
-          <form action="#" method="post">
-            <i class="fas fa-child"></i>
-            <button type="button">Familial</button>
-          </form>
-          <form action="#" method="post">
-            <i class="fas fa-heart"></i>
-            <button type="button">Romantique</button>
-          </form>
-          <form action="#" method="post">
-            <i class="fas fa-dog"></i>
-            <button type="button">Animaux autorisés</button>
-          </form>
-        </section>
+          <div style="display: flex;">
+            <strong>Filtres</strong>
+            <div style="display: flex;">
+              <div>
+                <i class="fas fa-money-bill-wave"></i>
+                <button type="button">Economique</button>
+              </div>
+              <div>
+                <i class="fas fa-child"></i>
+                <button type="button">Familial</button>
+              </div>
+              <div>
+                <i class="fas fa-heart"></i>
+                <button type="button">Romantique</button>
+              </div>
+              <div>
+                <i class="fas fa-dog"></i>
+                <button type="button">Animaux autorisés</button>
+              </div>
+            </div>
+
+          </div>
+
+        </form>
         <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
       </section>
-      <section id="Hébergements">
+      <section id="hebergements">
         <section id="accommodations"><!--la section hébergement à marseille devra avoir un fond gris en desktop mais un fond banc en mobile-->
-          <h1>Hébergements à Marseille</h1>
+          <h2>Hébergements à Marseille</h2>
           <div class="accommodations-1">
             <a href="#">
               <article><!--rendre la totalité de l'article cliquable avec la balise <a href="#">-->
-                <img src="C:\Users\isa\Documents\Marie\PremierProjet\images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo Auberge La Cannebière" class="fotos-1">
+                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo Auberge La Cannebière" class="fotos-1">
                 <h3>Auberge La Cannebière</h3>
                 <p>Nuit à partir de <strong>25€</strong></p>
                 <span>
@@ -83,9 +91,7 @@
                   <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                 </span><!--les petites étoiles de notation-->
               </article>
-            </a>  
-          </div>
-          <div class="accommodations-1">
+            </a>
             <a>
               <article>
                 <img>
@@ -121,7 +127,7 @@
         </section>
         <section id="popular"><!--cet article "les plus populaires" doit s'afficher avant "hébergements à marseille ds la version mobile"-->
           <div>
-            <h1>Les plus populaires</h1>
+            <h2>Les plus populaires</h2>
             <i class="fas fa-chart-line"></i>
           </div>
           <a>
@@ -146,7 +152,7 @@
               <div>
                 <h3>Au coeur de l'eau</h3>
                 <h3>Chambre d'hôtes</h3>
-                <p>Nuit à partir de 71<strong>€</strong></p>
+                <p class="text-small">Nuit à partir de 71<strong>€</strong></p>
                 <span>
                   <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                 </span><!--les petites étoiles de notation-->
@@ -169,7 +175,7 @@
           </a>
         </section>
       </section>
-      <section id="Activités">
+      <section id="activities">
         <h1>Activités à Marseille</h1>
         <div class="activities">
           <a>
@@ -214,13 +220,13 @@
           </div>
         </div>
       </section>
-    </main> 
+    </main>
     <footer>
       <article>
         <h4>A propos</h4>
-        <p>Fonctionnement du site</p>
-        <p>Conditions générales de vente</p>
-        <p>Données et confidentialité</p>
+        <a href="#">Fonctionnement du site</a>
+        <a href="#">Conditions générales de vente</a>
+        <a href="#">Données et confidentialité</a>
       </article>
       <article>
         <h4>Nos hébergements</h4>
